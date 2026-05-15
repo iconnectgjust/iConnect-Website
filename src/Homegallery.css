@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.whitegallery {
+  font-family: "Roboto", sans-serif;
+  min-height: 110vh;
+  padding: 7.4% 4% 4% 4%;
+}
+
+.galleryheading {
+  font-size: 3rem;
+  margin-bottom: 40px;
+  color: var(--Neutrals-Black-200, #333);
+font-family: Helvetica;
+font-style: normal;
+font-weight: 700;
+line-height: 125%; 
+}
+
+@media (max-width: 600px) {
+  .galleryheading{
+    text-align: center;
+  }
+
+}

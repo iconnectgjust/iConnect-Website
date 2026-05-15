@@ -1,0 +1,61 @@
+.shiny-text-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  margin-top: 42px;
+  font-weight: 200;
+  font-size: clamp(2rem, 6vw, 3.3rem);
+  font-family: "Roboto", sans-serif;
+  padding-right: 30px;
+  color: white;
+
+  opacity: 0;
+  transform: translateY(-100px);
+  animation: slideDownWeAre;
+  animation-duration: 0.3s; 
+  animation-delay: 0.3s;
+  animation-timing-function: cubic-bezier(0.25, 1, 0.5, 1);
+  animation-fill-mode: forwards;
+}
+
+@keyframes slideDownWeAre {
+  0% {
+    transform: translateY(-60px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.shiny-text {
+  color: #b5b5b5a4;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 40%,
+    rgba(255, 255, 255, 0.8) 50%,
+    rgba(255, 255, 255, 0) 60%
+  );
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  display: inline-block;
+  animation: shine 5s linear infinite;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 100%;
+  }
+  100% {
+    background-position: -100%;
+  }
+}
+
+.shiny-text.disabled {
+  animation: none;
+}

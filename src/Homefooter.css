@@ -1,0 +1,244 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.footerblack {
+  min-height: 48vh; 
+  background-color: black;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.footercontent {
+  display: flex;
+  flex: 1;
+  gap: 20px;
+}
+
+.footimage {
+  width: 35%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 46px;
+}
+.footimage img{
+  width: 265px;
+  height: 280px;
+}
+
+.footsociety,
+.footfollow,
+.footget {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  margin-top: 65px;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.footsociety h2,
+.footfollow h2,
+.footget h2 {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  position: relative;
+  font-family: "Helvetica";
+  width: 209px;
+}
+
+.footsociety h2::after,
+.footfollow h2::after,
+.footget h2::after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 50%; 
+  transform: translateX(-50%);
+  width: 209px;
+  height: 1px;
+  background: radial-gradient(
+    50.24% 50%,
+    #FFF 0%,
+    #000 100%
+  );
+}
+
+.footsociety a,
+.footfollow a {
+  text-decoration: none;
+  padding-top: 12px;
+  color: var(--Neutrals-Black-400, #999);
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  font-size: 1rem;
+  display: inline-block;
+  width: fit-content;
+}
+
+.footsociety a:hover,
+.footfollow a:hover {
+  color: white;
+}
+
+.footget p {
+  color: var(--Neutrals-Black-400, #999);
+  font-family: "Roboto";
+  max-width: 240px;
+  line-height: 25px;
+  padding-bottom: 20px;
+  font-size: 0.9rem;
+}
+
+.footgetcom {
+  display: flex;
+}
+
+.footget input {
+  width: 60%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  height: 35px;
+  background-color: #333;
+  border: none;
+  padding-left: 15px;
+  font-size: 0.9rem;
+  color: white;
+}
+
+.footget button {
+  width: 40px;
+  height: 35px;
+  background-color: #FF9400;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border: none;
+  transition: transform 0.3s ease;
+  color: white;
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.footget button:hover {
+  transform: scale(1.07);
+}
+
+.footerend {
+  text-align: center;
+  width: 100%;
+  margin-top: auto;
+  padding-bottom: 30px;
+}
+.footerend span:nth-child(1){
+  color: #FFF;
+  font-family: "Roboto";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+.footerend span:nth-child(2){
+  color: #FFF;
+  font-family: "Roboto";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+@media (max-width: 992px) {
+  .footercontent {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .footimage {
+    display: none;
+  }
+
+  .footsociety,
+  .footfollow,
+  .footget {
+    width: 90%;
+    align-items: center;
+    margin-top: 0;
+    text-align: center;
+  }
+
+  .footsociety h2,
+  .footfollow h2,
+  .footget h2 {
+    width: auto;
+    font-family: "Helvetica";
+    font-style: normal;
+    font-weight: 700;
+  }
+  .footsociety h2{
+    padding-top: 60px;
+  }
+
+  .footget p {
+    max-width: 25%;
+  }
+
+  .footgetcom {
+    justify-content: center;
+  }
+
+  .footget input {
+    width: 75%;         
+    height: 40px;      
+    font-size: 1rem;
+  }
+  .footget button {
+    height: 40px;
+    width: 50px;
+    font-size: 1.6rem;
+  }
+  .footerend{
+    margin-top: 70px;
+  }
+}
+
+@media (max-width: 576px) {
+  .footsociety h2,
+  .footfollow h2,
+  .footget h2 {
+    font-family: "Helvetica";
+    font-size: 1.1rem;
+    font-style: normal;
+    font-weight: 700;
+  }
+  .footgetcom {
+  width: 100%;
+  justify-content: center;
+}
+
+.footget input {
+  width: calc(100% - 60px); /* Leaves space for button */
+  max-width: 90%;
+  margin-bottom: 0;
+}
+
+.footget button {
+  width: 50px;
+  font-size: 1.6rem;
+}
+.footget p {
+  white-space: nowrap;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+}

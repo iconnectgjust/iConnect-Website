@@ -1,0 +1,248 @@
+.white-aboutus {
+  width: 100%;
+  min-height: 100vh; 
+  padding-top: 130px;
+  overflow-x: hidden;
+}
+
+.aaboutcontatiner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 70px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.aabout-section {
+  flex: 1;
+  min-width: 300px;
+  max-width: 700px;
+  padding: 1rem;
+  text-align: left;
+}
+
+.aabout-section h2 {
+  font-family: "Helvetica", sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.aabout-section p {
+  color: var(--Neutrals-Black-300, #666);
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.aaboutimage {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  aspect-ratio: 5 / 4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.iimage-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  border-radius: 16px;
+  background: var(--Accent-Color-Yellow-500, #FFDFB3);
+  z-index: 1;
+}
+
+.aaboutimage img {
+  position: absolute;
+  top: 40px;
+  left: -80px;
+  width: 483px;
+  height: 335px;
+  border-radius: 12px;
+  z-index: 2;
+  object-fit: cover;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.visioncontainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 40px;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 6rem 1rem 7rem 1rem;
+}
+
+.visionimage {
+  width: 356px;
+  height: 356px;
+  padding: 22px 52.145px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  background: var(--Neutrals-Black-200, #333);
+}
+
+.visionimage img {
+  width: 251.855px;
+  height: 312px;
+  aspect-ratio: 251.86 / 312.00;
+  object-fit: contain;
+}
+
+.visioncontent {
+  flex: 1;
+  min-width: 300px;
+  max-width: 800px;
+  padding: 1rem;
+}
+
+.visioncontent h2 {
+  color: var(--Neutrals-Black-100, #000);
+  font-family: "Helvetica";
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 125%;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.visioncontent p {
+  color: var(--Neutrals-Black-300, #666);
+  font-family: "Roboto";
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+/* Responsive Styles */
+@media (max-width: 1136px) {
+  .aabout-section h2 {
+    font-size: 2.8rem;
+  }
+
+  .aabout-section p {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .aaboutcontatiner,
+  .visioncontainer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 0 1rem;
+  }
+  .visioncontainer{
+    padding-bottom: 5rem;
+  }
+
+  .aabout-section {
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+  }
+
+  .aaboutimage {
+    order: 2;
+    max-width: 450px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+
+  .aaboutimage img {
+    position: relative;
+    left: -18px;
+    top: -18px;
+    width: 100%;
+    height: 82%;
+  }
+
+  .iimage-bg {
+    width: 100%;
+    height: 82%;
+    top: 25px;
+  }
+
+  .visionimage {
+    order: 2;
+    margin-top: 10px;
+  }
+
+  .visioncontent {
+    order: 1;
+  }
+}
+
+@media (max-width: 600px) {
+  .white-aboutus {
+    padding-top: 80px;
+  }
+
+  .aabout-section h2,
+  .visioncontent h2 {
+    font-size: 2rem;
+  }
+
+  .aabout-section p,
+  .visioncontent p {
+    font-size: 1rem;
+  }
+
+  .aaboutimage {
+    max-width: 400px;
+  }
+
+  .iimage-bg {
+    border-radius: 12px;
+  }
+
+  .visioncontainer {
+    padding-bottom: 60px;
+  }
+}
+@media (max-width:490px){
+      .aaboutimage{
+        max-width: 350px;
+      }
+      .aaboutimage img{
+        left:-4px;
+      }
+      .iimage-bg{
+        left: 10px;
+      }
+    }
+@media (max-width: 390px) {
+  .visionimage {
+    width: 100%;
+    height: 356px;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .visionimage img {
+    width: 100%;
+    height: 90%;
+    aspect-ratio: auto;
+  }
+}
+
