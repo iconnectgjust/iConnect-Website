@@ -8,6 +8,7 @@ import Homegallery from "./Homegallery";
 import Hometouch from "./Hometouch";
 import Homefooter from "./Homefooter";
 import AboutusPage from './pages/Aboutus';
+import SeedFundingPage from './pages/SeedFunding';
 import NotFound from "./NotFound";
 
 function App() {
@@ -30,12 +31,12 @@ function App() {
 
   return (
     <>
-      <Navbar />
       <Routes>
         <Route
           path="/"
           element={
             <>
+              <Navbar />
               <HomeFront />
               <Homeabout />
               <Homeinit />
@@ -45,7 +46,13 @@ function App() {
             </>
           }
         />
-        <Route path="/about" element={<AboutusPage />} />
+        <Route path="/about" element={
+          <>
+            <Navbar />
+            <AboutusPage />
+          </>
+        } />
+        <Route path="/seedfunding" element={<SeedFundingPage />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </>

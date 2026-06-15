@@ -1,0 +1,83 @@
+import "./SeedMain.css";
+import mainimage from "../../assets/SeedMainImage.png";
+
+const handleScrollLink = (e, targetId) => {
+  e.preventDefault();
+
+  if (location.pathname === "/seedfunding") {
+    const el = document.getElementById(targetId);
+
+    if (el) {
+      const offset = -100;
+      const y = el.getBoundingClientRect().top + window.pageYOffset + offset;
+
+      window.scrollTo({
+        top: y,
+        behavior: "smooth",
+      });
+    }
+  } else {
+    window.location.href = `/seedfunding#${targetId}`;
+  }
+};
+
+function SeedMain() {
+  return (
+    <section className="hero">
+      <div className="hero-container">
+        {/* Left Content */}
+        <div className="hero-content">
+          <div className="badge">
+            <span className="dot"></span>
+            <h2>Applications open - June 2026</h2>
+          </div>
+
+          <h1>
+            Seed Funding <br />
+            Opportunity 2026
+          </h1>
+
+          <div className="underline"></div>
+
+          <p className="subtitle">Empowering Ideas to Grow</p>
+
+          <p className="description">
+            Supporting student innovators with funding, mentorship and
+            opportunities to transform ideas into impactful ventures.
+          </p>
+
+          <div className="hero-buttons">
+            <a
+              href="https://forms.gle/5cdaBqPBvoDccumW9"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="apply-btn">
+                Apply Now <span>→</span>
+              </button>
+            </a>
+
+            <a
+              href="#updates"
+              onClick={(e) => {
+                handleScrollLink(e, "updates");
+              }}
+            >
+              {" "}
+              <button className="update-btn">
+                Latest Updates <span>↓</span>
+              </button>{" "}
+            </a>
+          </div>
+        </div>
+
+        {/* Right Image */}
+        <div className="hero-image">
+          <img src={mainimage} alt="Seed Funding" />
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export default SeedMain;

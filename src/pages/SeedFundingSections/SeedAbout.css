@@ -1,0 +1,317 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.programme-details {
+  background: #f7f6f3;
+  padding: 80px 120px;
+  color: #11225e;
+  overflow: hidden;
+}
+
+.eyebrow {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #8b8f99;
+  margin: 0 0 12px;
+}
+
+.heading {
+  font-size: 32px;
+  font-weight: 800;
+  color: #11225e;
+  margin: 0 0 48px;
+  letter-spacing: -0.01em;
+}
+
+.label {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #8b8f99;
+  margin: 0 0 24px;
+}
+
+/* Top Grid */
+
+.content-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0 10px;
+  gap: 80px;
+  margin-bottom: 56px;
+}
+
+.funding-amount {
+  font-size: 56px;
+  font-weight: 800;
+  color: #11225e;
+  margin: 0 0 20px;
+  letter-spacing: -0.01em;
+}
+
+.funding-description {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #6b7280;
+  margin: 0;
+  max-width: 320px;
+}
+
+/* Dates */
+
+.dates-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.date-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 12px 0;
+}
+
+.icon {
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.icon-open {
+  color: #1aa260;
+}
+
+.icon-close {
+  color: #e8463a;
+}
+
+.date-text {
+  flex: 1;
+}
+
+.date-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: #11225e;
+  margin: 0;
+}
+
+.date-value {
+  font-size: 13px;
+  color: #a8acb6;
+  margin: 4px 0 0;
+}
+
+.badge {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  padding: 6px 14px;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+.badge-open {
+  background: #d8f3e6;
+  color: #1f7a52;
+}
+
+.badge-deadline {
+  background: #fbe1de;
+  color: #c8503a;
+}
+
+/* Bottom Grid */
+
+.bottom-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  padding: 40px 10px;
+  border-top: 1px solid #e4e2dd;
+}
+
+.who-can-apply {
+  border-right: 1px solid #e4e2dd;
+  padding-right: 80px;
+}
+
+.check-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.check-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.check-icon {
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+  color: #11225e;
+  margin-top: 2px;
+}
+
+.check-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.check-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: #11225e;
+  margin: 0;
+}
+
+.check-description {
+  font-size: 13px;
+  color: #a8acb6;
+  margin: 4px 0 0;
+}
+
+/* Proposal List */
+
+.proposal-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.proposal-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.proposal-number {
+  font-size: 13px;
+  font-weight: 700;
+  color: #e8a317;
+  min-width: 22px;
+}
+
+.proposal-text {
+  font-size: 15px;
+  font-weight: 600;
+  color: #11225e;
+}
+
+/* Responsive */
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .programme-details {
+    padding: 60px 48px;
+  }
+
+  .content-grid {
+    gap: 48px;
+  }
+
+  .bottom-grid {
+    gap: 48px;
+    padding: 40px 0;
+  }
+
+  .who-can-apply {
+    padding-right: 48px;
+  }
+}
+
+@media (max-width: 900px) {
+  .content-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .bottom-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .who-can-apply {
+    border-right: none;
+    padding-right: 0;
+    padding-bottom: 32px;
+    border-bottom: 1px solid #e4e2dd;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .programme-details {
+    padding: 40px 24px;
+  }
+
+  .heading {
+    font-size: 26px;
+    margin-bottom: 36px;
+  }
+
+  .content-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .bottom-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 32px 0;
+  }
+
+  .who-can-apply {
+    border-right: none;
+    padding-right: 0;
+    padding-bottom: 32px;
+    border-bottom: 1px solid #e4e2dd;
+  }
+
+  .funding-amount {
+    font-size: 44px;
+  }
+}
+
+@media (max-width: 480px) {
+  .programme-details {
+    padding: 32px 16px;
+  }
+
+  .heading {
+    font-size: 22px;
+    margin-bottom: 28px;
+  }
+
+  .funding-amount {
+    font-size: 38px;
+  }
+
+  .content-grid,
+  .bottom-grid {
+    gap: 32px;
+  }
+}

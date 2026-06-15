@@ -4,7 +4,9 @@ import fest from "./assets/KonarkTechfest.jpg";
 import learn from "./assets/LearnersClub.jpg";
 import pitch from "./assets/PitchPoint.jpg";
 import sih from "./assets/SIH.jpg";
+import seedFunding from "./assets/Seedfunding.jpeg"
 import { useState} from "react";
+import { Link } from 'react-router-dom';
 
 function Homeinit(){
     const [showEsummitMessage, setShowEsummitMessage] = useState(false);
@@ -70,7 +72,7 @@ function Homeinit(){
                             </article>
                             <h2>Smart India Hackathon(SIH)</h2>
                             <p>A national-level hackathon where our team not only competes but also organizes internal hackathons and mentorship drives.</p>
-                            <div onClick={handleEsummitClick}>Learn more</div>
+                            <a className="esummitlink" href="https://sih.gov.in/" target="_blank" rel="noopener noreferrer">Learn more</a>
                         </div>
                     </div>
                 </div>
