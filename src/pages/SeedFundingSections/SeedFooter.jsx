@@ -3,10 +3,7 @@ import React from "react";
 import footerlogo from "../../assets/iconnectlogo.png";
 
 const contacts = [
-  "+91 7988256341 (Sanju)",
-  "+91 7988256341 (Sanju)",
-  "+91 7988256341 (Sanju)",
-  "+91 7988256341 (Sanju)",
+  "+91 94679 05906 (iConnect)"
 ];
 
 const socialLinks = [
@@ -14,16 +11,16 @@ const socialLinks = [
     label: "LinkedIn",
     href: "https://www.linkedin.com/company/iconnect-gjust/",
   },
-  { label: "Instagram", href: "https://www.instagram.com/iconnectgjust/" },
+  { label: "Instagram",
+    href: "https://www.instagram.com/iconnectgjust/" 
+  },
   {
     label: "X - Twitter",
     href: "https://x.com/iconnectgjust?t=GZGkd_h65aoTtg3M5MnmCg&s=08",
   },
-  {
-    label: "WhatsApp",
-    href: "https://www.whatsapp.com/channel/0029VaELUPEGU3BNfgEAmU0h",
+  { label: "Youtube",
+     href: "https://www.youtube.com/@iConnectGJUST"
   },
-  { label: "Youtube", href: "https://www.youtube.com/@iConnectGJUST" },
 ];
 
 const PhoneIcon = () => (

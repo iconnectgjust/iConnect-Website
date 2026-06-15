@@ -19,52 +19,13 @@ const announcements = [
   },
   {
     id: 2,
-    date: "15 June 2026",
-    time: "10:00 AM",
-    tags: [
-      { label: "RESULT", type: "result" },
-      { label: "ANNOUNCEMENT", type: "announcement" },
-    ],
-    title: "Pitching Round Schedule Released",
-    description:
-      "The schedule for preliminary pitching rounds has been finalized. Teams will present in 8-minute slots followed by a 4-minute Q&A with the panel. Check your assigned time slot and prepare accordingly.",
-    category: "Schedules",
-  },
-  {
-    id: 3,
-    date: "15 June 2026",
-    time: "10:00 AM",
+    date: "15 July 2026",
+    time: "11:59 PM",
     tags: [{ label: "DEADLINE", type: "deadline" }],
-    title: "Venue Updated — Moved to Innovation Hub",
+    title: "Application Deadline",
     description:
-      "The main event venue has been relocated from the Engineering Auditorium to the newly inaugurated Innovation Hub in Block D. The space offers better infrastructure, breakout rooms, and dedicated networking areas.",
+      "Applications for the Seed Funding Opportunity 2026 will close soon. Eligible UG, PG, and PhD students are encouraged to submit their proposals before the deadline through the official portal.",
     category: "Deadlines",
-  },
-  {
-    id: 4,
-    date: "15 June 2026",
-    time: "10:00 AM",
-    tags: [
-      { label: "OPEN", type: "open" },
-      { label: "URGENT", type: "urgent", dot: true },
-    ],
-    title: "Applications Now Open for Seed Funding 2026",
-    description:
-      "The Seed Funding Opportunity 2026 is officially accepting applications. All eligible UG, PG, and PhD students are encouraged to submit their proposals through the official portal.",
-    category: "Results",
-  },
-  {
-    id: 5,
-    date: "15 June 2026",
-    time: "10:00 AM",
-    tags: [
-      { label: "OPEN", type: "open" },
-      { label: "URGENT", type: "urgent", dot: true },
-    ],
-    title: "Applications Now Open for Seed Funding 2026",
-    description:
-      "The Seed Funding Opportunity 2026 is officially accepting applications. All eligible UG, PG, and PhD students are encouraged to submit their proposals through the official portal.",
-    category: "Announcements",
   },
 ];
 

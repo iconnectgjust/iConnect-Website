@@ -71,7 +71,7 @@ a {
   height: 8px;
   background: #f5b400;
   border-radius: 50px;
-  transform: translateX(390px);
+  align-self: flex-end;
   margin-bottom: 25px;
 }
 

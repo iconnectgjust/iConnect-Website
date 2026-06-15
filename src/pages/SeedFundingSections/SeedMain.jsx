@@ -58,15 +58,13 @@ function SeedMain() {
             </a>
 
             <a
-              href="#updates"
-              onClick={(e) => {
-                handleScrollLink(e, "updates");
-              }}
+              href="https://drive.google.com/drive/folders/16Ze2L7r3lwMVsdE2l6OTn-8TPtw7UEcu"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              {" "}
               <button className="update-btn">
-                Latest Updates <span>↓</span>
-              </button>{" "}
+                More Details <span>→</span>
+              </button>
             </a>
           </div>
         </div>

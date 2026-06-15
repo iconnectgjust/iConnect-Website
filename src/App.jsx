@@ -18,6 +18,10 @@ function App() {
     if (location.pathname === "/about") {
       // Scroll to top when About page is loaded
       window.scrollTo({ top: 0, behavior: 'smooth' });
+    } 
+    else if (location.pathname === "/seedfunding") {
+      // Scroll to top when About page is loaded
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     } else if (location.pathname === "/" && location.hash) {
       // Scroll to section if hash exists (e.g. /#gallery)
       const el = document.getElementById(location.hash.replace('#', ''));
