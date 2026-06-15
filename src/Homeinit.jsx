@@ -4,7 +4,7 @@ import fest from "./assets/KonarkTechfest.jpg";
 import learn from "./assets/LearnersClub.jpg";
 import pitch from "./assets/PitchPoint.jpg";
 import sih from "./assets/SIH.jpg";
-import seedFunding from "./assets/Seedfunding.jpeg"
+import seedFunding from "./assets/SeedCardimage.png"
 import { useState} from "react";
 import { Link } from 'react-router-dom';
 
@@ -47,7 +47,15 @@ function Homeinit(){
                              <a className="esummitlink" href="https://esummit.iconnectgjust.in" target="_blank" rel="noopener noreferrer">Learn more</a>
                         </div>
                     </div>
-                    <div className="middlecont">
+                    <div className="leftcont">
+                            <div className="initcard">
+                                <article className="initimgcont">
+                                    <img src={seedFunding} alt="about section" loading="lazy"/>
+                                </article>
+                                <h2>Seed Funding </h2>
+                                <p>This opportunity aims to empower student innovators by providing seed funding, mentorship, workspace, and institutional support to transform innovative ideas into impactful startup ventures.</p>
+                                <Link className="esummitlink" to="/seedfunding">Learn more</Link>
+                            </div>
                             <div className="initcard">
                                 <article className="initimgcont">
                                     <img src={pitch} alt="about section" loading="lazy"/>
