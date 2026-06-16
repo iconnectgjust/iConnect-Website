@@ -1,6 +1,3 @@
-* {
-  overflow-x: clip;
-}
 
 .programme-details {
   width: 100%;
@@ -8,6 +5,7 @@
   padding: 80px 120px;
   color: #11225e;
   overflow: hidden;
+  overflow-x: clip;
 }
 
 .eyebrow {

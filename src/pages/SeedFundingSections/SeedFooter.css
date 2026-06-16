@@ -1,12 +1,10 @@
-* {
-  overflow-x: clip;
-}
 
 .site-footer {
   width: 100%;
   background: #0a1958;
   color: #ffffff;
   padding: 48px 120px 24px;
+  overflow-x: clip;
 }
 
 /* Top Grid */

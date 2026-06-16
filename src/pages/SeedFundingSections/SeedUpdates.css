@@ -1,6 +1,3 @@
-* {
-  overflow-x: clip;
-}
 
 .announcements {
   width: 100%;
@@ -13,6 +10,7 @@
     "Segoe UI",
     sans-serif;
   color: #11225e;
+  overflow-x: clip;
 }
 
 .eyebrow {
