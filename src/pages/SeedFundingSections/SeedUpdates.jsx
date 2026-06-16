@@ -50,7 +50,7 @@ useScrollAnimation();
         {TABS.map((tab) => (
           <button
             key={tab}
-            className={`tab ${activeTab === tab ? "tab-active" : ""} reveal slide-left`}
+            className={`tab ${activeTab === tab ? "tab-active" : ""}`}
             onClick={() => setActiveTab(tab)}
           >
             {tab}
