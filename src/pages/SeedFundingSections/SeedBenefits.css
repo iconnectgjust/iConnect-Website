@@ -1,10 +1,9 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  overflow-x: clip;
 }
 
 .beyond-funding {
+  width: 100%;
   background: #f7f6f3;
   padding: 0 120px 80px;
   color: #11225e;
