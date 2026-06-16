@@ -35,93 +35,101 @@ function SeedNavbar() {
   }, [location]);
 
   return (
-    <nav className="navbar">
-      <div className="navbar-container">
-        {/* Logo */}
-        <div className="logo">
-          <Link
-            to="/seedfunding"
-            onClick={() => {
-              if (location.pathname === "/seedfunding") {
-                window.scrollTo({
-                  top: 0,
-                  behavior: "smooth",
-                });
-              }
-            }}
-          >
-            <img
-              src={navimage}
-              alt="iConnect Logo"
-              height="68px"
-              width="180px"
-            />
-          </Link>
-        </div>
-
-        {/* Navigation Links */}
-        <ul className={`nav-links ${menuOpen ? "active" : ""}`}>
-          <li>
+    <>
+      <nav className="navbar">
+        <div className="navbar-container">
+          {/* Logo */}
+          <div className="logo">
             <Link
               to="/seedfunding"
               onClick={() => {
-                setActiveTab("home");
-                setMenuOpen(false);
-                window.scrollTo({ top: 0, behavior: "smooth" });
+                if (location.pathname === "/seedfunding") {
+                  window.scrollTo({
+                    top: 0,
+                    behavior: "smooth",
+                  });
+                }
               }}
-              className={activeTab === "home" ? "active-link" : ""}
             >
-              Home
+              <img
+                src={navimage}
+                alt="iConnect Logo"
+                height="68px"
+                width="180px"
+              />
             </Link>
-          </li>
+          </div>
 
-          <li>
-            <a
-              href="#updates"
-              className={activeTab === "updates" ? "active-link" : ""}
-              onClick={(e) => {
-                setActiveTab("updates");
-                handleScrollLink(e, "updates");
-              }}
-            >
-              Updates
-            </a>
-          </li>
+          {/* Navigation Links */}
+          <ul className={`nav-links ${menuOpen ? "active" : ""}`}>
+            <li>
+              <Link
+                to="/seedfunding"
+                onClick={() => {
+                  setActiveTab("home");
+                  setMenuOpen(false);
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }}
+                className={activeTab === "home" ? "active-link" : ""}
+              >
+                Home
+              </Link>
+            </li>
 
-          {/* Mobile Button */}
-          <li className="mobile-btn">
-            <a
-              href="https://forms.gle/5cdaBqPBvoDccumW9"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <button className="apply-btn">Apply Now →</button>{" "}
-            </a>
-          </li>
-        </ul>
+            <li>
+              <a
+                href="#updates"
+                className={activeTab === "updates" ? "active-link" : ""}
+                onClick={(e) => {
+                  setActiveTab("updates");
+                  handleScrollLink(e, "updates");
+                }}
+              >
+                Updates
+              </a>
+            </li>
 
-        {/* Desktop Button */}
-        <a
-          className="desktop-btn"
-          href="https://forms.gle/5cdaBqPBvoDccumW9"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          {" "}
-          <button className="apply-btn">Apply Now →</button>
-        </a>
+            {/* Mobile Button */}
+            <li className="mobile-btn">
+              <a
+                href="https://forms.gle/5cdaBqPBvoDccumW9"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button className="apply-btn">Apply Now →</button>{" "}
+              </a>
+            </li>
+          </ul>
 
-        {/* Mobile Menu */}
-        <div
-          className={`hamburger ${menuOpen ? "open" : ""}`}
-          onClick={() => setMenuOpen(!menuOpen)}
-        >
-          <span></span>
-          <span></span>
-          <span></span>
+          {/* Desktop Button */}
+          <a
+            className="desktop-btn"
+            href="https://forms.gle/5cdaBqPBvoDccumW9"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {" "}
+            <button className="apply-btn">Apply Now →</button>
+          </a>
+
+          {/* Mobile Menu */}
+          <div
+            className={`hamburger ${menuOpen ? "open" : ""}`}
+            onClick={() => setMenuOpen(!menuOpen)}
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
         </div>
-      </div>
-    </nav>
+        
+      </nav>
+      <div className="announcement-bar">
+          <div className="announcement-track">
+            📢 Important: Submit BOTH a hard copy and a soft copy of your proposal to PDUIIC, GJUST Hisar before the deadline.
+          </div>
+        </div>
+    </>
   );
 }
 

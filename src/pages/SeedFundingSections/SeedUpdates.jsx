@@ -1,12 +1,14 @@
 import "./SeedUpdates.css";
-import React, { useState } from "react";
+import "./SeedScrollanimations.css";
+import useScrollAnimation from "./SeedScrollanimations";
+import React, { useState }from "react";
 
 const TABS = ["All", "Announcements", "Deadlines", "Schedules", "Results"];
 
 const announcements = [
   {
     id: 1,
-    date: "15 June 2026",
+    date: "June 15, 2026",
     time: "10:00 AM",
     tags: [
       { label: "OPEN", type: "open" },
@@ -14,22 +16,24 @@ const announcements = [
     ],
     title: "Applications Now Open for Seed Funding 2026",
     description:
-      "The Seed Funding Opportunity 2026 is officially accepting applications. All eligible UG, PG, and PhD students are encouraged to submit their proposals through the official portal.",
+      "Seed funding opportunity 2026 is officially accepting proposal. All eligible UG, PG, and PhD students may submit their proposals through the official portal and at the PDUIIC office.",
     category: "Announcements",
   },
   {
     id: 2,
-    date: "15 July 2026",
+    date: "July 15, 2026",
     time: "11:59 PM",
     tags: [{ label: "DEADLINE", type: "deadline" }],
     title: "Application Deadline",
     description:
-      "Applications for the Seed Funding Opportunity 2026 will close soon. Eligible UG, PG, and PhD students are encouraged to submit their proposals before the deadline through the official portal.",
+      "Applications for the Seed Funding Opportunity 2026 will close soon. All interested applicants are encouraged to submit their proposals before the deadline.",
     category: "Deadlines",
   },
 ];
 
 function SeedUpdates() {
+useScrollAnimation();
+
   const [activeTab, setActiveTab] = useState("All");
 
   const filtered =
@@ -40,13 +44,13 @@ function SeedUpdates() {
   return (
     <section id="updates" className="announcements">
       <p className="eyebrow">Updates</p>
-      <h2 className="heading">Announcements &amp; Important notices</h2>
+      <h2 className="heading reveal slide-left">Announcements &amp; Important notices</h2>
 
       <div className="tabs">
         {TABS.map((tab) => (
           <button
             key={tab}
-            className={`tab ${activeTab === tab ? "tab-active" : ""}`}
+            className={`tab ${activeTab === tab ? "tab-active" : ""} reveal slide-left`}
             onClick={() => setActiveTab(tab)}
           >
             {tab}
@@ -56,7 +60,7 @@ function SeedUpdates() {
 
       <div className="timeline">
         {filtered.map((item) => (
-          <div className="timeline-item" key={item.id}>
+          <div className="timeline-item reveal slide-left" key={item.id}>
             <div className="timeline-line" />
             <div className="timeline-content">
               <div className="timeline-meta">

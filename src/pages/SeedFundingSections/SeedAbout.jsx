@@ -1,4 +1,6 @@
 import "./SeedAbout.css";
+import "./SeedScrollanimations.css";
+import useScrollAnimation from "./SeedScrollanimations";
 import React from "react";
 
 const whoCanApply = [
@@ -15,8 +17,8 @@ const whoCanApply = [
     description: "Doctoral research candidates",
   },
   {
-    title: "Teams up to 5 members",
-    description: "Individual applicants or team submissions",
+    title: "Individual or Teams up to 5 members",
+    description: "Only full-time students of GJUS&T",
   },
 ];
 
@@ -30,22 +32,24 @@ const proposalItems = [
 ];
 
 function SeedAbout() {
+  useScrollAnimation();
+
   return (
     <section className="programme-details">
       <p className="eyebrow">Programme Details</p>
-      <h1 className="heading">Everything you need&nbsp; to get started</h1>
+      <h1 className="heading reveal slide-left">Everything you need&nbsp; to get started</h1>
 
       <div className="content-grid">
-        <div className="funding-block">
+        <div className="funding-block reveal slide-left">
           <p className="label">Funding Support</p>
-          <p className="funding-amount">₹1.5L</p>
+          <p className="funding-amount">Upto ₹1.5L</p>
           <p className="funding-description">
             Per selected startup or project — to support prototyping,
             development, and early-stage growth.
           </p>
         </div>
 
-        <div className="dates-block">
+        <div className="dates-block reveal slide-right">
           <p className="label">Important Dates</p>
 
           <div className="date-row">
@@ -60,7 +64,7 @@ function SeedAbout() {
             </span>
             <div className="date-text">
               <p className="date-title">Applications Open</p>
-              <p className="date-value">15 June, 2026</p>
+              <p className="date-value">June 15, 2026</p>
             </div>
             <span className="badge badge-open">OPEN</span>
           </div>
@@ -77,7 +81,7 @@ function SeedAbout() {
             </span>
             <div className="date-text">
               <p className="date-title">Applications Close</p>
-              <p className="date-value">15 July, 2026</p>
+              <p className="date-value">July 15, 2026</p>
             </div>
             <span className="badge badge-deadline">DEADLINE</span>
           </div>
@@ -85,7 +89,7 @@ function SeedAbout() {
       </div>
 
       <div className="bottom-grid">
-        <div className="who-can-apply">
+        <div className="who-can-apply reveal slide-left">
           <p className="label">Who Can Apply</p>
           <ul className="check-list">
             {whoCanApply.map((item) => (
@@ -112,7 +116,7 @@ function SeedAbout() {
           </ul>
         </div>
 
-        <div className="proposal-include">
+        <div className="proposal-include reveal slide-right">
           <p className="label">Your Proposal Should Include</p>
           <ul className="proposal-list">
             {proposalItems.map((item, index) => (
@@ -124,6 +128,10 @@ function SeedAbout() {
               </li>
             ))}
           </ul>
+          <br />
+          <p className="check-description">
+            (Proposals must be endrosed by a faculty mentor or Department head)
+          </p>
         </div>
       </div>
     </section>

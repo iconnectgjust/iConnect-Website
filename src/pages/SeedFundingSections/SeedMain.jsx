@@ -1,5 +1,8 @@
 import "./SeedMain.css";
 import mainimage from "../../assets/SeedMainImage.png";
+import "./SeedScrollanimations.css";
+import useScrollAnimation from "./SeedScrollanimations";
+import React from "react";
 
 const handleScrollLink = (e, targetId) => {
   e.preventDefault();
@@ -22,11 +25,13 @@ const handleScrollLink = (e, targetId) => {
 };
 
 function SeedMain() {
+useScrollAnimation();
+
   return (
     <section className="hero">
       <div className="hero-container">
         {/* Left Content */}
-        <div className="hero-content">
+        <div className="hero-content reveal slide-left">
           <div className="badge">
             <span className="dot"></span>
             <h2>Applications open - June 2026</h2>
@@ -70,7 +75,7 @@ function SeedMain() {
         </div>
 
         {/* Right Image */}
-        <div className="hero-image">
+        <div className="hero-image reveal slide-right">
           <img src={mainimage} alt="Seed Funding" />
         </div>
       </div>

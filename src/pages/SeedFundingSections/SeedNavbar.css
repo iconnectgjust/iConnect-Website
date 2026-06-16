@@ -109,20 +109,18 @@ a {
 /* ================= HAMBURGER ================= */
 
 .hamburger {
+  z-index: 1000;
   display: none;
   flex-direction: column;
   gap: 5px;
-
   cursor: pointer;
 }
 
 .hamburger span {
   width: 26px;
   height: 3px;
-
   background: #222;
   border-radius: 5px;
-
   transition: 0.3s ease;
 }
 
@@ -223,5 +221,35 @@ a {
 @media (max-width: 400px) {
   .navbar-container {
     padding: 12px;
+  }
+}
+
+.announcement-bar {
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  background: #11225e;
+  color: #fff;
+  overflow: hidden;
+  padding: 12px 0;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.announcement-track {
+  display: inline-block;
+  white-space: nowrap;
+  padding-left: 100%;
+  font-size: 14px;
+  font-weight: 600;
+  animation: marquee 18s linear infinite;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
   }
 }
