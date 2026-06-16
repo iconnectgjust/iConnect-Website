@@ -60,7 +60,7 @@ useScrollAnimation();
 
       <div className="timeline">
         {filtered.map((item) => (
-          <div className="timeline-item reveal slide-left" key={item.id}>
+          <div className="timeline-item" key={item.id}>
             <div className="timeline-line" />
             <div className="timeline-content">
               <div className="timeline-meta">
