@@ -1,4 +1,3 @@
-
 .funding-guidelines {
   width: 100%;
   background: #f7f6f3;
@@ -53,6 +52,8 @@
 
 .guideline-card ul {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .guideline-card li {
@@ -92,10 +93,13 @@
 
   .guidelines-heading {
     font-size: 26px;
+    margin-bottom: 36px;
   }
 
   .guidelines-grid {
     grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 0;
   }
 }
 
@@ -106,5 +110,13 @@
 
   .guidelines-heading {
     font-size: 22px;
+  }
+
+  .guideline-card {
+    padding: 22px 18px;
+  }
+
+  .guideline-card h3 {
+    font-size: 16px;
   }
 }

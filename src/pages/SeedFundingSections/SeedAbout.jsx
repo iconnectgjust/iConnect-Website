@@ -66,7 +66,7 @@ function SeedAbout() {
               <p className="date-title">Applications Open</p>
               <p className="date-value">June 15, 2026</p>
             </div>
-            <span className="badge badge-open">OPEN</span>
+            <span className="aboutbadge aboutbadge-open">OPEN</span>
           </div>
 
           <div className="date-row">
@@ -83,7 +83,7 @@ function SeedAbout() {
               <p className="date-title">Applications Close</p>
               <p className="date-value">July 15, 2026</p>
             </div>
-            <span className="badge badge-deadline">DEADLINE</span>
+            <span className="aboutbadge aboutbadge-deadline">DEADLINE</span>
           </div>
         </div>
       </div>
@@ -128,10 +128,6 @@ function SeedAbout() {
               </li>
             ))}
           </ul>
-          <br />
-          <p className="check-description">
-            (Proposals must be endrosed by a faculty mentor or Department head)
-          </p>
         </div>
       </div>
     </section>

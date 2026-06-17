@@ -2,25 +2,18 @@ import "./SeedFooter.css";
 import React from "react";
 import footerlogo from "../../assets/iconnectlogo.png";
 
-const contacts = [
-  "+91 94679 05906 (iConnect)"
-];
-
 const socialLinks = [
   {
     label: "LinkedIn",
     href: "https://www.linkedin.com/company/iconnect-gjust/",
   },
-  { label: "Instagram",
-    href: "https://www.instagram.com/iconnectgjust/" 
-  },
+  { label: "Instagram", href: "https://www.instagram.com/iconnectgjust/" },
   {
     label: "X - Twitter",
     href: "https://x.com/iconnectgjust?t=GZGkd_h65aoTtg3M5MnmCg&s=08",
   },
-  { label: "Youtube",
-     href: "https://www.youtube.com/@iConnectGJUST"
-  },
+  { label: "YouTube", href: "https://www.youtube.com/@iConnectGJUST" },
+  { label: "WhatsApp", href: "https://www.whatsapp.com/channel/0029VaELUPEGU3BNfgEAmU0h" },
 ];
 
 const PhoneIcon = () => (
@@ -72,17 +65,29 @@ function SeedFooter() {
         </div>
 
         <div className="footer-contacts">
-          <h3 className="footer-heading">Contacts</h3>
+          <h3 className="footer-heading">Contact Us</h3>
           <ul className="contact-list">
-            {contacts.map((number, index) => (
-              <li className="contact-item" key={index}>
-                <span className="contact-icon">
-                  <PhoneIcon />
-                </span>
-                <span>{number}</span>
-              </li>
-            ))}
+            <li className="contact-item">
+              <span className="contact-icon">
+                <PhoneIcon />
+              </span>
+              <span>+91 94679 05906</span>
+            </li>
+            <a href="mailto:iconnectgjust@gmail.com" className="mail-link">
+              <span className="contact-icon">
+                <MailIcon />
+              </span>
+              iconnectgjust@gmail.com
+            </a>
           </ul>
+
+          <div className="footer-address">
+            <h3 className="footer-heading">Address</h3>
+            <p className="address-text">
+              PDUIIC building, GJUS&amp;T, Hisar,
+              Haryana - 125001
+            </p>
+          </div>
         </div>
 
         <div className="footer-social">
@@ -96,29 +101,6 @@ function SeedFooter() {
               </li>
             ))}
           </ul>
-        </div>
-      </div>
-
-      <div className="footer-mail-row">
-        <div className="footer-address">
-          <h3 className="footer-heading">Address</h3>
-          <p className="address-text">
-            iConnect Office, PDUIIC building,
-            <br />
-            GJUS&amp;T, Hisar,
-            <br />
-            Haryana - 125001
-          </p>
-        </div>
-
-        <div className="footer-mail">
-          <h3 className="footer-heading">You can also mail us at</h3>
-          <a href="mailto:iconnectgjust@gmail.com" className="mail-link">
-            <span className="contact-icon">
-              <MailIcon />
-            </span>
-            iconnectgjust@gmail.com
-          </a>
         </div>
       </div>
 
