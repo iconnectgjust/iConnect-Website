@@ -61,7 +61,7 @@ function Navbar() {
             <li><a href="#initiative" onClick={(e) => handleScrollLink(e, "initiative")}>Our Initiative</a></li>
             <li><a href="#gallery" onClick={(e) => handleScrollLink(e, "gallery")}>Gallery</a></li>
             <li><a href="#contact" onClick={(e) => handleScrollLink(e, "contact")}>Contact</a></li>
-            <li><Link to="/seedfunding" onClick={pressClick}>Seed Funding</Link></li>
+            <li><Link to="/seedfunding" target="_blank" rel="noopener noreferrer" onClick={pressClick}>Seed Funding</Link></li>
             {/* <li><a href="https://konark26.iconnectgjust.in" target="_blank" rel="noopener noreferrer">Konark'26</a></li> */}
           </ul>
           <a href="#" id="close" onClick={pressClick}><i className='bx bx-x'></i></a>

@@ -54,7 +54,7 @@ function Homeinit(){
                                 </article>
                                 <h2>Seed Funding </h2>
                                 <p>This opportunity aims to empower student innovators by providing seed funding, mentorship, workspace, and institutional support to transform innovative ideas into impactful startup ventures.</p>
-                                <Link className="esummitlink" to="/seedfunding">Learn more</Link>
+                                <Link className="esummitlink" to="/seedfunding" target="_blank" rel="noopener noreferrer">Learn more</Link>
                             </div>
                             <div className="initcard">
                                 <article className="initimgcont">
