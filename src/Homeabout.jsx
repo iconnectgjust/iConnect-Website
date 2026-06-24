@@ -21,7 +21,7 @@ function Homeabout() {
           <div className="about-section">
             <h2>ABOUT US</h2>
             <p>
-              Team iConnect is the student organization located at the Pandit Deendayal Upadhyay Innovatin & Incubation Center(PDUIIC) at GJUS&T in Hisar. We are a passionate and proactive team dedicated to bridging the gap between students and the tech-driven world. Our mission is to foster a culture of innovation, collaboration and leadership through hands-on events, workshops, and national-level competitions.
+              Team iConnect is the student organization located at the Pandit Deendayal Upadhyay Innovation & Incubation Center(PDUIIC) at GJUS&T in Hisar. We are a passionate and proactive team dedicated to bridging the gap between students and the tech-driven world. Our mission is to foster a culture of innovation, collaboration and leadership through hands-on events, workshops, and national-level competitions.
               Iconnect is run by a well-defined administrative team, an influential advisory panel, and a mentoring system.
               With a strong focus on building 21st-century skills, we provide platforms for students to ideate, showcase, and scale their talents.
             </p>
