@@ -5,6 +5,7 @@ import SeedBenefits from "./SeedFundingSections/SeedBenefits";
 import SeedGuidelines from "./SeedFundingSections/SeedGuidelines";
 import SeedUpdates from "./SeedFundingSections/SeedUpdates";
 import SeedFooter from "./SeedFundingSections/SeedFooter";
+import SeedVideo from "./SeedFundingSections/SeedVideo"
 
 function SeedFunding() {
   return (
@@ -15,6 +16,7 @@ function SeedFunding() {
       <SeedBenefits />
       <SeedGuidelines />
       <SeedUpdates />
+      <SeedVideo />
       <SeedFooter />
     </>
   );
